@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+## Multiplication table
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+a multiplication table in React
 
-## Available Scripts
+<!-- _One liner + link to confluence page_
+_Screenshot of UI - optional_ -->
 
-In the project directory, you can run:
+## Setup
 
-### `yarn start`
+<!-- _stack - optional_
+_How to build and run the code/app_ -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+git clone git@github.com:pietrop/multiplication-table.git
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+cd multiplication-table
+```
 
-### `yarn test`
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `yarn build`
+```
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- ## System Architecture -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- _High level overview of system architecture_ -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- ## Documentation
 
-### `yarn eject`
+There's a [docs](./docs) folder in this repository.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[docs/notes](./docs/notes) contains dev draft notes on various aspects of the project. This would generally be converted either into ADRs or guides when ready.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[docs/adr](./docs/adr) contains [Architecture Decision Record](https://github.com/joelparkerhenderson/architecture_decision_record).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> An architectural decision record (ADR) is a document that captures an important architectural decision made along with its context and consequences.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc2c309c2751aea6f1b34b31d95) -->
 
-## Learn More
+## Development env
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ <!-- _How to run the development environment_ -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- npm > `6.1.0`
+- [Node 12](https://nodejs.org/docs/latest-v12.x/api/)
 
-### Code Splitting
+Node version is set in node version manager [`.nvmrc`](https://github.com/creationix/nvm#nvmrc)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+nvm use
+```
 
-### Analyzing the Bundle Size
+<!-- _Coding style convention ref optional, eg which linter to use_ -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- _Linting, github pre-push hook - optional_ -->
 
-### Making a Progressive Web App
+## Build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- _How to run build_ -->
 
-### Advanced Configuration
+```
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Tests
 
-### Deployment
+<!-- _How to carry out tests_ -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+_NA_
 
-### `yarn build` fails to minify
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- _How to deploy the code/app into test/staging/production_ -->
+
+```
+npm run deploy
+```

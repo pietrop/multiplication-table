@@ -5,44 +5,83 @@ function App() {
   const [table, setTable] = useState(null);
 
   useEffect(() => {
-    const tmpTable = printMultiplicationTable();
-    setTable(tmpTable);
+    handleUpdateTable();
   }, []);
 
   const handleChangeNum = (e) => {
     setNum(e.target.value);
   };
 
-  const printMultiplicationTable = () => {
-    let table = [];
-    let row = [];
-    let counter = 0;
+  /**
+   * returns core logic to make a 2D array of multiplication table
+   * @returns 2D array
+   */
+  const makeMultiplicationTable = (num) => {
+    const table = [];
     // counter starting at 1 to avoid zero padding on table
     for (let j = 1; j <= num; j++) {
-      row = new Array(num).fill(1).map((n, i) => {
-        // i+1 to start at 1 and not at zero
-        counter += 1;
+      let row = new Array(num).fill(1);
+      for (let i = 0; i < num; i++) {
+        row[i] = (i + 1) * j;
+      }
+      table.push(row);
+    }
+    return table;
+  };
+
+  /**
+   * converts table 2D array to jsx table element
+   * @param {2D array} table
+   * @returns table html element jsx
+   */
+  const print2DArray = (table) => {
+    let keyCounter = 0;
+    const tableEl = table.map((row, j) => {
+      const rowEl = row.map((cell, i) => {
+        keyCounter += 1;
         return (
-          <td
-            style={{ textAlign: 'center', backgroundColor: i + 1 === j ? 'yellow' : 'lightblue' }}
-            key={counter}
-          >
-            {i + 1 === j ? (
-              <b title={`${i + 1}*${j}`}>{(i + 1) * j}</b>
+          <>
+            {i === j ? (
+              <td
+                style={{ textAlign: 'center', backgroundColor: 'yellow' }}
+                key={keyCounter.toString()}
+                title={`${i}*${j}`}
+              >
+                {cell}
+              </td>
+            ) : i === 0 || j === 0 ? (
+              <th
+                style={{ textAlign: 'center', backgroundColor: 'lightblue' }}
+                key={keyCounter.toString()}
+                title={`${i}*${j}`}
+              >
+                {cell}
+              </th>
             ) : (
-              <span title={`${i + 1}*${j}`}>{(i + 1) * j}</span>
+              <td
+                style={{ textAlign: 'center', backgroundColor: 'lightblue' }}
+                key={keyCounter.toString()}
+                title={`${i}*${j}`}
+              >
+                {cell}
+              </td>
             )}
-          </td>
+          </>
         );
       });
-      table.push(<tr key={j}>{row}</tr>);
-    }
-    return <table style={{ width: '100%' }}>{table}</table>;
+      return <tr key={j}>{rowEl}</tr>;
+    });
+    return (
+      <table style={{ width: '100%' }}>
+        <tbody>{tableEl}</tbody>
+      </table>
+    );
   };
 
   const handleUpdateTable = () => {
-    const tmpTable = printMultiplicationTable(num);
-    setTable(tmpTable);
+    const tmpTable = makeMultiplicationTable(num);
+    console.table(tmpTable);
+    setTable(print2DArray(tmpTable));
   };
 
   return (
