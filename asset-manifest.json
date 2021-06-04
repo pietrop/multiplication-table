@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/multiplication-table/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/multiplication-table/static/js/main.3e7d4fa5.chunk.js",
-    "main.js.map": "/multiplication-table/static/js/main.3e7d4fa5.chunk.js.map",
+    "main.js": "/multiplication-table/static/js/main.b61f1e20.chunk.js",
+    "main.js.map": "/multiplication-table/static/js/main.b61f1e20.chunk.js.map",
     "runtime-main.js": "/multiplication-table/static/js/runtime-main.1f79864e.js",
     "runtime-main.js.map": "/multiplication-table/static/js/runtime-main.1f79864e.js.map",
-    "static/js/2.95f477a2.chunk.js": "/multiplication-table/static/js/2.95f477a2.chunk.js",
-    "static/js/2.95f477a2.chunk.js.map": "/multiplication-table/static/js/2.95f477a2.chunk.js.map",
+    "static/js/2.8da45c51.chunk.js": "/multiplication-table/static/js/2.8da45c51.chunk.js",
+    "static/js/2.8da45c51.chunk.js.map": "/multiplication-table/static/js/2.8da45c51.chunk.js.map",
     "static/js/3.1a584c72.chunk.js": "/multiplication-table/static/js/3.1a584c72.chunk.js",
     "static/js/3.1a584c72.chunk.js.map": "/multiplication-table/static/js/3.1a584c72.chunk.js.map",
     "index.html": "/multiplication-table/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/multiplication-table/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.95f477a2.chunk.js.LICENSE.txt": "/multiplication-table/static/js/2.95f477a2.chunk.js.LICENSE.txt"
+    "static/js/2.8da45c51.chunk.js.LICENSE.txt": "/multiplication-table/static/js/2.8da45c51.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1f79864e.js",
-    "static/js/2.95f477a2.chunk.js",
+    "static/js/2.8da45c51.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.3e7d4fa5.chunk.js"
+    "static/js/main.b61f1e20.chunk.js"
   ]
 }
