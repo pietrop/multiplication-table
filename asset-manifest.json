@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/multiplication-table/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/multiplication-table/static/js/main.db6f7489.chunk.js",
-    "main.js.map": "/multiplication-table/static/js/main.db6f7489.chunk.js.map",
+    "main.js": "/multiplication-table/static/js/main.9a710255.chunk.js",
+    "main.js.map": "/multiplication-table/static/js/main.9a710255.chunk.js.map",
     "runtime-main.js": "/multiplication-table/static/js/runtime-main.1f79864e.js",
     "runtime-main.js.map": "/multiplication-table/static/js/runtime-main.1f79864e.js.map",
     "static/js/2.8da45c51.chunk.js": "/multiplication-table/static/js/2.8da45c51.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1f79864e.js",
     "static/js/2.8da45c51.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.db6f7489.chunk.js"
+    "static/js/main.9a710255.chunk.js"
   ]
 }
