@@ -1,6 +1,8 @@
 ## Multiplication table
 
-a multiplication table in React
+React exercise, a multiplication table
+
+> Write a program that prints a multiplication table for an arbitrary number.
 
 <!-- _One liner + link to confluence page_
 _Screenshot of UI - optional_ -->

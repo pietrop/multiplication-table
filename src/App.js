@@ -87,13 +87,7 @@ function App() {
       return <tr key={j}>{rowEl}</tr>;
     });
     return (
-      <table
-        style={
-          {
-            //  width: '100%',
-          }
-        }
-      >
+      <table>
         <tbody>{tableEl}</tbody>
       </table>
     );
