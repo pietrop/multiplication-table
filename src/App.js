@@ -50,7 +50,7 @@ function App() {
                   height: '2em',
                 }}
                 key={keyCounter.toString()}
-                title={`${i}*${j}`}
+                title={`${i + 1}*${j + 1}`}
               >
                 {cell}
               </td>
@@ -63,7 +63,7 @@ function App() {
                   height: '2em',
                 }}
                 key={keyCounter.toString()}
-                title={`${i}*${j}`}
+                title={`${i + 1}*${j + 1}`}
               >
                 {cell}
               </th>
@@ -76,7 +76,7 @@ function App() {
                   height: '2em',
                 }}
                 key={keyCounter.toString()}
-                title={`${i}*${j}`}
+                title={`${i + 1}*${j + 1}`}
               >
                 {cell}
               </td>
