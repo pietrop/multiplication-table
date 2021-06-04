@@ -43,7 +43,12 @@ function App() {
           <>
             {i === j ? (
               <td
-                style={{ textAlign: 'center', backgroundColor: 'yellow' }}
+                style={{
+                  textAlign: 'center',
+                  backgroundColor: 'yellow',
+                  width: '2em',
+                  height: '2em',
+                }}
                 key={keyCounter.toString()}
                 title={`${i}*${j}`}
               >
@@ -51,7 +56,12 @@ function App() {
               </td>
             ) : i === 0 || j === 0 ? (
               <th
-                style={{ textAlign: 'center', backgroundColor: 'lightblue' }}
+                style={{
+                  textAlign: 'center',
+                  backgroundColor: 'lightblue',
+                  width: '2em',
+                  height: '2em',
+                }}
                 key={keyCounter.toString()}
                 title={`${i}*${j}`}
               >
@@ -59,7 +69,12 @@ function App() {
               </th>
             ) : (
               <td
-                style={{ textAlign: 'center', backgroundColor: 'lightblue' }}
+                style={{
+                  textAlign: 'center',
+                  backgroundColor: 'lightblue',
+                  width: '2em',
+                  height: '2em',
+                }}
                 key={keyCounter.toString()}
                 title={`${i}*${j}`}
               >
@@ -72,7 +87,13 @@ function App() {
       return <tr key={j}>{rowEl}</tr>;
     });
     return (
-      <table style={{ width: '100%' }}>
+      <table
+        style={
+          {
+            //  width: '100%',
+          }
+        }
+      >
         <tbody>{tableEl}</tbody>
       </table>
     );
